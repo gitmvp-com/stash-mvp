@@ -1,0 +1,82 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  background-color: #2a2a2a !important;
+}
+
+.card {
+  background-color: #2a2a2a;
+  border-color: #3a3a3a;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.media-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 100%;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.media-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #3a3a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag-badge {
+  margin: 2px;
+}
+
+.modal-content {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.form-control {
+  background-color: #3a3a3a;
+  border-color: #4a4a4a;
+  color: #ffffff;
+  
+  &:focus {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #007bff;
+  }
+}
+
+.stats-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
